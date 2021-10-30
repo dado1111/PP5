@@ -1,3 +1,5 @@
+*
+
 # Default ignored files
 /shelf/
 /workspace.xml
@@ -7,7 +9,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
-../res/
-../cmake-build-debug/
-../cmake-build-wsl/
-../.idea
+!../src/
+!../test/
+!../CMakeLists.txt
