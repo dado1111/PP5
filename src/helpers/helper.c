@@ -12,11 +12,9 @@ struct RangeArray* getRanges(int thread_count, int min, int max){
     int single_range = size / thread_count;
     int leftover_range = size % thread_count;
 
-    int range = 0;
+    int range = min;
 
-
-    for(int i = 0 ; i < rangeArray->size ; i++){
-
+    for(int i = 0 ; i < thread_count ; i++){
         rangeArray->ranges[i]->from = range;
         range += single_range;
         range += leftover_range-- > 0 ? 1 : 0;
