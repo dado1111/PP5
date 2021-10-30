@@ -1,5 +1,3 @@
-*
-!.gitignore
-!test/
-!src/
-!CMakeLists.txt
+.idea
+cmake*
+res/
